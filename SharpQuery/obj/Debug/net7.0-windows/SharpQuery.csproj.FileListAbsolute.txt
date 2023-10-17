@@ -1,0 +1,11 @@
+D:\Мультимедиа файлы\Справочник\Предметы\Кустова\C#\SharpQuery\bin\Debug\net7.0-windows\SharpQuery.deps.json
+D:\Мультимедиа файлы\Справочник\Предметы\Кустова\C#\SharpQuery\bin\Debug\net7.0-windows\SharpQuery.dll
+D:\Мультимедиа файлы\Справочник\Предметы\Кустова\C#\SharpQuery\bin\Debug\net7.0-windows\SharpQuery.pdb
+D:\Мультимедиа файлы\Справочник\Предметы\Кустова\C#\SharpQuery\obj\Debug\net7.0-windows\SharpQuery.GeneratedMSBuildEditorConfig.editorconfig
+D:\Мультимедиа файлы\Справочник\Предметы\Кустова\C#\SharpQuery\obj\Debug\net7.0-windows\SharpQuery.AssemblyInfoInputs.cache
+D:\Мультимедиа файлы\Справочник\Предметы\Кустова\C#\SharpQuery\obj\Debug\net7.0-windows\SharpQuery.AssemblyInfo.cs
+D:\Мультимедиа файлы\Справочник\Предметы\Кустова\C#\SharpQuery\obj\Debug\net7.0-windows\SharpQuery.csproj.CoreCompileInputs.cache
+D:\Мультимедиа файлы\Справочник\Предметы\Кустова\C#\SharpQuery\obj\Debug\net7.0-windows\SharpQuery.dll
+D:\Мультимедиа файлы\Справочник\Предметы\Кустова\C#\SharpQuery\obj\Debug\net7.0-windows\refint\SharpQuery.dll
+D:\Мультимедиа файлы\Справочник\Предметы\Кустова\C#\SharpQuery\obj\Debug\net7.0-windows\SharpQuery.pdb
+D:\Мультимедиа файлы\Справочник\Предметы\Кустова\C#\SharpQuery\obj\Debug\net7.0-windows\ref\SharpQuery.dll
