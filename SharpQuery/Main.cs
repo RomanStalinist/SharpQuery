@@ -195,28 +195,28 @@
         public static void bind(this Control eventData, string eventType, Action handler)
         {
             Dictionary<string, Action> eventMappings = new()
-        {
-            { "blur", () => eventData.blur(handler) },
-            { "changelocation", () => eventData.changelocation(handler) },
-            { "changeparent", () => eventData.changeparent(handler) },
-            { "changesize", () => eventData.changesize(handler) },
-            { "changetext", () => eventData.changetext(handler) },
-            { "click", () => eventData.click(handler) },
-            { "dblclick", () => eventData.dblclick(handler) },
-            { "focus", () => eventData.focus(handler) },
-            { "hover", () => eventData.hover(handler) },
-            { "keydown", () => eventData.keydown(handler) },
-            { "keypress", () => eventData.keypress(handler) },
-            { "keyup", () => eventData.keyup(handler) },
-            { "mousedown", () => eventData.mousedown(handler) },
-            { "mouseenter", () => eventData.mouseenter(handler) },
-            { "mouseleave", () => eventData.mouseleave(handler) },
-            { "mousemove", () => eventData.mousemove(handler) },
-            { "mouseup", () => eventData.mouseup(handler) },
-            { "ready", () => eventData.ready(handler) },
-            { "resize", () => eventData.resize(handler) },
-            { "scroll", () => eventData.scroll(handler) }
-        };
+            {
+                { "blur", () => eventData.blur(handler) },
+                { "changelocation", () => eventData.changelocation(handler) },
+                { "changeparent", () => eventData.changeparent(handler) },
+                { "changesize", () => eventData.changesize(handler) },
+                { "changetext", () => eventData.changetext(handler) },
+                { "click", () => eventData.click(handler) },
+                { "dblclick", () => eventData.dblclick(handler) },
+                { "focus", () => eventData.focus(handler) },
+                { "hover", () => eventData.hover(handler) },
+                { "keydown", () => eventData.keydown(handler) },
+                { "keypress", () => eventData.keypress(handler) },
+                { "keyup", () => eventData.keyup(handler) },
+                { "mousedown", () => eventData.mousedown(handler) },
+                { "mouseenter", () => eventData.mouseenter(handler) },
+                { "mouseleave", () => eventData.mouseleave(handler) },
+                { "mousemove", () => eventData.mousemove(handler) },
+                { "mouseup", () => eventData.mouseup(handler) },
+                { "ready", () => eventData.ready(handler) },
+                { "resize", () => eventData.resize(handler) },
+                { "scroll", () => eventData.scroll(handler) }
+            };
 
             if (eventMappings.ContainsKey(eventType))
             {
@@ -231,28 +231,28 @@
         public static void bind(this Control eventData, string eventType, Action<ControlEventArgs> handler)
         {
             Dictionary<string, Action> eventMappings = new()
-        {
-            { "blur", () => eventData.blur(handler) },
-            { "changelocation", () => eventData.changelocation(handler) },
-            { "changeparent", () => eventData.changeparent(handler) },
-            { "changesize", () => eventData.changesize(handler) },
-            { "changetext", () => eventData.changetext(handler) },
-            { "click", () => eventData.click(handler) },
-            { "dblclick", () => eventData.dblclick(handler) },
-            { "focus", () => eventData.focus(handler) },
-            { "hover", () => eventData.hover(handler) },
-            { "keydown", () => eventData.keydown(handler) },
-            { "keypress", () => eventData.keypress(handler) },
-            { "keyup", () => eventData.keyup(handler) },
-            { "mousedown", () => eventData.mousedown(handler) },
-            { "mouseenter", () => eventData.mouseenter(handler) },
-            { "mouseleave", () => eventData.mouseleave(handler) },
-            { "mousemove", () => eventData.mousemove(handler) },
-            { "mouseup", () => eventData.mouseup(handler) },
-            { "ready", () => eventData.ready(handler) },
-            { "resize", () => eventData.resize(handler) },
-            { "scroll", () => eventData.scroll(handler) }
-        };
+            {
+                { "blur", () => eventData.blur(handler) },
+                { "changelocation", () => eventData.changelocation(handler) },
+                { "changeparent", () => eventData.changeparent(handler) },
+                { "changesize", () => eventData.changesize(handler) },
+                { "changetext", () => eventData.changetext(handler) },
+                { "click", () => eventData.click(handler) },
+                { "dblclick", () => eventData.dblclick(handler) },
+                { "focus", () => eventData.focus(handler) },
+                { "hover", () => eventData.hover(handler) },
+                { "keydown", () => eventData.keydown(handler) },
+                { "keypress", () => eventData.keypress(handler) },
+                { "keyup", () => eventData.keyup(handler) },
+                { "mousedown", () => eventData.mousedown(handler) },
+                { "mouseenter", () => eventData.mouseenter(handler) },
+                { "mouseleave", () => eventData.mouseleave(handler) },
+                { "mousemove", () => eventData.mousemove(handler) },
+                { "mouseup", () => eventData.mouseup(handler) },
+                { "ready", () => eventData.ready(handler) },
+                { "resize", () => eventData.resize(handler) },
+                { "scroll", () => eventData.scroll(handler) }
+            };
 
             if (eventMappings.ContainsKey(eventType))
             {
@@ -481,6 +481,7 @@
                 {
                     Target = eventData
                 };
+                handler(args);
             };
         }
 
@@ -497,6 +498,7 @@
                 {
                     Target = eventData
                 };
+                handler(args);
             };
         }
 
@@ -513,6 +515,7 @@
                 {
                     Target = eventData
                 };
+                handler(args);
             };
         }
 
@@ -529,6 +532,7 @@
                 {
                     Target = eventData
                 };
+                handler(args);
             };
         }
 
@@ -545,34 +549,35 @@
                 {
                     Target = eventData
                 };
+                handler(args);
             };
         }
 
         public static void on(this Control eventData, string eventTypes, Action handler)
         {
             Dictionary<string, Action> eventMappings = new()
-        {
-            { "blur", () => eventData.blur(handler) },
-            { "changelocation", () => eventData.changelocation(handler) },
-            { "changeparent", () => eventData.changeparent(handler) },
-            { "changesize", () => eventData.changesize(handler) },
-            { "changetext", () => eventData.changetext(handler) },
-            { "click", () => eventData.click(handler) },
-            { "dblclick", () => eventData.dblclick(handler) },
-            { "focus", () => eventData.focus(handler) },
-            { "hover", () => eventData.hover(handler) },
-            { "keydown", () => eventData.keydown(handler) },
-            { "keypress", () => eventData.keypress(handler) },
-            { "keyup", () => eventData.keyup(handler) },
-            { "mousedown", () => eventData.mousedown(handler) },
-            { "mouseenter", () => eventData.mouseenter(handler) },
-            { "mouseleave", () => eventData.mouseleave(handler) },
-            { "mousemove", () => eventData.mousemove(handler) },
-            { "mouseup", () => eventData.mouseup(handler) },
-            { "ready", () => eventData.ready(handler) },
-            { "resize", () => eventData.resize(handler) },
-            { "scroll", () => eventData.scroll(handler) }
-        };
+            {
+                { "blur", () => eventData.blur(handler) },
+                { "changelocation", () => eventData.changelocation(handler) },
+                { "changeparent", () => eventData.changeparent(handler) },
+                { "changesize", () => eventData.changesize(handler) },
+                { "changetext", () => eventData.changetext(handler) },
+                { "click", () => eventData.click(handler) },
+                { "dblclick", () => eventData.dblclick(handler) },
+                { "focus", () => eventData.focus(handler) },
+                { "hover", () => eventData.hover(handler) },
+                { "keydown", () => eventData.keydown(handler) },
+                { "keypress", () => eventData.keypress(handler) },
+                { "keyup", () => eventData.keyup(handler) },
+                { "mousedown", () => eventData.mousedown(handler) },
+                { "mouseenter", () => eventData.mouseenter(handler) },
+                { "mouseleave", () => eventData.mouseleave(handler) },
+                { "mousemove", () => eventData.mousemove(handler) },
+                { "mouseup", () => eventData.mouseup(handler) },
+                { "ready", () => eventData.ready(handler) },
+                { "resize", () => eventData.resize(handler) },
+                { "scroll", () => eventData.scroll(handler) }
+            };
 
             string[] eventTypeArray = eventTypes.Split(' ');
 
@@ -657,6 +662,7 @@
                 {
                     Target = eventData
                 };
+                handler(args);
             };
         }
 
@@ -673,6 +679,7 @@
                 {
                     Target = eventData
                 };
+                handler(args);
             };
         }
     }
